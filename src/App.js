@@ -5,8 +5,34 @@ import Home from './Pages/Home/Home/Home';
 function App() {
   return (
     <div className="App">
-      <h1>Hello world</h1>
       <Home></Home>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+
     </div>
   );
 }
