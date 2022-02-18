@@ -1,0 +1,3 @@
+.blog-card:hover img {
+    filter: grayscale(100%);
+}

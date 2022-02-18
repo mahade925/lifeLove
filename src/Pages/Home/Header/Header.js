@@ -6,7 +6,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
-            <nav className="shadow-sm fixed w-full z-5 bg-white duration-100">
+            <nav className="shadow-sm w-full z-5 bg-white duration-100">
                 <div className="w-full">
                     <div className="flex items-center h-20 w-full">
                         <div className="flex items-center  mx-20 justify-around w-full">
@@ -14,7 +14,7 @@ const Header = () => {
                                 <h1 className="text-4xl cursor-pointer dancing">Life Love</h1>
                             </div>
                             <div className="hidden md:block">
-                                <div className="ml-10 flex items-baseline space-x-4">
+                                <div className="flex items-baseline space-x-4">
                                     <Link
                                         data-aos="fade-down"
                                         data-aos-easing="linear"
@@ -29,19 +29,6 @@ const Header = () => {
                                         HOME
                                     </Link>
                                     <Link
-                                        data-aos="fade-down"
-                                        data-aos-easing="linear"
-                                        data-aos-duration="1000"
-                                        activeClass="about"
-                                        to="about"
-                                        smooth={true}
-                                        offset={50}
-                                        duration={500}
-                                        className="duration-100 cursor-pointer text-black hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium"
-                                    >
-                                        PORTFOLIO
-                                    </Link>
-                                    <Link
                                     data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
@@ -54,7 +41,19 @@ const Header = () => {
                                     >
                                         SHOP
                                     </Link>
-
+                                    <Link
+                                    data-aos="fade-down"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="1000"
+                                        activeClass="work"
+                                        to="work"
+                                        smooth={true}
+                                        offset={50}
+                                        duration={500}
+                                        className="duration-100 cursor-pointer text-black hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium"
+                                    >
+                                        PACKAGES
+                                    </Link>
                                     <Link
                                     data-aos="fade-down"
                                         data-aos-easing="linear"
