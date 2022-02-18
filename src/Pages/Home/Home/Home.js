@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Packages from '../Packages/Packages';
 import Shop from '../Shop/Shop';
 import Slider from '../Slider/Slider';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Shop></Shop>
             <Packages></Packages>
             <Blog></Blog>
+            <Testimonial></Testimonial>
         </div>
     );
 };
