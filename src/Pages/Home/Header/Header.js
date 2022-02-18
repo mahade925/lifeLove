@@ -19,7 +19,7 @@ const Header = () => {
                                         data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
-                                        activeClass="Home"
+                                        activeclassName="Home"
                                         to="about"
                                         smooth={true}
                                         offset={50}
@@ -32,7 +32,7 @@ const Header = () => {
                                     data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
-                                        activeClass="work"
+                                        activeclassName="work"
                                         to="work"
                                         smooth={true}
                                         offset={50}
@@ -45,7 +45,7 @@ const Header = () => {
                                     data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
-                                        activeClass="work"
+                                        activeclassName="work"
                                         to="work"
                                         smooth={true}
                                         offset={50}
@@ -58,7 +58,7 @@ const Header = () => {
                                     data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
-                                        activeClass="Services"
+                                        activeclassName="Services"
                                         to="work"
                                         smooth={true}
                                         offset={50}
@@ -72,7 +72,7 @@ const Header = () => {
                                     data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
-                                        activeClass="Services"
+                                        activeclassName="Services"
                                         to="work"
                                         smooth={true}
                                         offset={50}
@@ -152,7 +152,7 @@ const Header = () => {
                             >
                                 <Link
                                     href="/home"
-                                    activeClass="home"
+                                    activeclassName="home"
                                     to="home"
                                     smooth={true}
                                     offset={50}
@@ -163,7 +163,7 @@ const Header = () => {
                                 </Link>
                                 <Link
                                     href="/about"
-                                    activeClass="about"
+                                    activeclassName="about"
                                     to="about"
                                     smooth={true}
                                     offset={50}
@@ -175,7 +175,7 @@ const Header = () => {
 
                                 <Link
                                     href="/work"
-                                    activeClass="work"
+                                    activeclassName="work"
                                     to="work"
                                     smooth={true}
                                     offset={50}
@@ -186,7 +186,7 @@ const Header = () => {
                                 </Link>
                                 <Link
                                     href="/services"
-                                    activeClass="services"
+                                    activeclassName="services"
                                     to="services"
                                     smooth={true}
                                     offset={50}
@@ -198,7 +198,7 @@ const Header = () => {
                                 <link rel="stylesheet" href="" />
                                 <Link
                                     href="/contact"
-                                    activeClass="work"
+                                    activeclassName="work"
                                     to="work"
                                     smooth={true}
                                     offset={50}

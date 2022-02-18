@@ -3,10 +3,10 @@ import './Packages.css'
 
 const Packages = () => {
     return (
-        <div>
+        <div className='pb-48'>
             <h1 className='josefins-sans text-2xl mb-4'>Pricing</h1>
             <h1 className='josefins-sans text-4xl mt-2 mb-32'>WEDDING PACKAGES</h1>
-            <div class="grid grid-cols-3 gap-10 w-8/12 m-auto">
+            <div className="grid grid-cols-3 gap-10 w-8/12 m-auto">
                 <div className='package-card bg-white cursor-pointer pb-10'>
                     <div className='img-container'>
                         <img src="https://images.unsplash.com/photo-1599799045670-b6a30c133f03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" className='drop-shadow-xl rounded-full package-img' />

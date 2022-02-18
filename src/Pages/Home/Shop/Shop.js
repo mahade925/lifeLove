@@ -6,7 +6,7 @@ const Shop = () => {
         <div className="mt-40 mb-40">
             <h1 className='josefins-sans text-2xl mb-4'>Our Shop</h1>
             <h1 className='josefins-sans text-4xl mt-2 mb-14'>SPECIAL PRODUCT FOR YOU</h1>
-            <div class="grid grid-cols-4 gap-8 w-8/12 m-auto">
+            <div className="grid grid-cols-4 gap-8 w-8/12 m-auto">
                 <div className='image-box'>
                     <img className='shop-img duration-300' src="https://images.unsplash.com/photo-1594816935907-1e8f03b98437?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZyUyMGdvd258ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                     <button className='btn'>Add To Cart</button>
