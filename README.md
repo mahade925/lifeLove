@@ -1,6 +1,6 @@
 <h1>Life Love</h1>
 <hr>
-<a href="https://lifelove.netlify.app/">live link</a>
+<a href="https://lifelove.netlify.app/" target="_blank">live link</a>
 <ul>
     <li>Tailwind css used</li>
     <li>Top header and banner designed</li>
