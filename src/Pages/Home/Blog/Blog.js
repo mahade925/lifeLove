@@ -3,7 +3,7 @@ import './Blog.css'
 
 const Blog = () => {
     return (
-        <div className='my-48 pt-32'>
+        <div className='my-48 pt-32' id='blog'>
             <h1 className='josefins-sans text-2xl mb-4'>News</h1>
             <h1 className='josefins-sans text-4xl mt-2 mb-16'>FROM OUR BLOG</h1>
             <div className="grid grid-cols-3 gap-10 w-8/12 m-auto text-left">

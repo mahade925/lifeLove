@@ -1,6 +1,9 @@
 import {React, useState} from 'react';
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
+import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import Contact from '../../Contact/Contact';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +29,9 @@ const Header = () => {
                                         duration={500}
                                         className="duration-100 cursor-pointer text-blue-600 font-semibold px-3 py-2 text-xl"
                                     >
-                                        HOME
+                                        <NavLink to="/home">
+                                            HOME
+                                        </NavLink>
                                     </Link>
                                     <Link
                                     data-aos="fade-down"
@@ -39,7 +44,7 @@ const Header = () => {
                                         duration={500}
                                         className="duration-100 cursor-pointer text-black hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium"
                                     >
-                                        SHOP
+                                        <HashLink to="/home#shop">SHOP</HashLink>
                                     </Link>
                                     <Link
                                     data-aos="fade-down"
@@ -52,7 +57,7 @@ const Header = () => {
                                         duration={500}
                                         className="duration-100 cursor-pointer text-black hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium"
                                     >
-                                        PACKAGES
+                                        <HashLink to="/home#packages">PACKAGES</HashLink>
                                     </Link>
                                     <Link
                                     data-aos="fade-down"
@@ -65,7 +70,7 @@ const Header = () => {
                                         duration={500}
                                         className="duration-100 cursor-pointer text-black hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium"
                                     >
-                                        BLOG
+                                        <HashLink to="/home#blog">BLOG</HashLink>
                                     </Link>
 
                                     <Link
@@ -79,7 +84,9 @@ const Header = () => {
                                         duration={500}
                                         className="duration-100 cursor-pointer text-black hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium"
                                     >
-                                        CONTACT
+                                        <NavLink to="/contact">
+                                            CONTACT
+                                        </NavLink>
                                     </Link>
                                 </div>
                             </div>

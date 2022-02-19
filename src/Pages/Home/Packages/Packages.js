@@ -3,7 +3,7 @@ import './Packages.css'
 
 const Packages = () => {
     return (
-        <div className='pb-48'>
+        <div className='pb-48' id='packages'>
             <h1 className='josefins-sans text-2xl mb-4'>Pricing</h1>
             <h1 className='josefins-sans text-4xl mt-2 mb-32'>WEDDING PACKAGES</h1>
             <div className="grid grid-cols-3 gap-10 w-8/12 m-auto">
