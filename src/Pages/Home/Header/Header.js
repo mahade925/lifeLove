@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import { React, useState } from 'react';
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 import { NavLink } from 'react-router-dom';
@@ -34,7 +34,7 @@ const Header = () => {
                                         </NavLink>
                                     </Link>
                                     <Link
-                                    data-aos="fade-down"
+                                        data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
                                         activeclassName="work"
@@ -47,7 +47,7 @@ const Header = () => {
                                         <HashLink to="/home#shop">SHOP</HashLink>
                                     </Link>
                                     <Link
-                                    data-aos="fade-down"
+                                        data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
                                         activeclassName="work"
@@ -60,7 +60,7 @@ const Header = () => {
                                         <HashLink to="/home#packages">PACKAGES</HashLink>
                                     </Link>
                                     <Link
-                                    data-aos="fade-down"
+                                        data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
                                         activeclassName="Services"
@@ -74,7 +74,7 @@ const Header = () => {
                                     </Link>
 
                                     <Link
-                                    data-aos="fade-down"
+                                        data-aos="fade-down"
                                         data-aos-easing="linear"
                                         data-aos-duration="1000"
                                         activeclassName="Services"
@@ -166,7 +166,9 @@ const Header = () => {
                                     duration={500}
                                     className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
-                                    Home
+                                    <NavLink to="/home">
+                                        HOME
+                                    </NavLink>
                                 </Link>
                                 <Link
                                     href="/about"
@@ -177,7 +179,7 @@ const Header = () => {
                                     duration={500}
                                     className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
-                                    About
+                                    <HashLink to="/home#shop">SHOP</HashLink>
                                 </Link>
 
                                 <Link
@@ -189,7 +191,7 @@ const Header = () => {
                                     duration={500}
                                     className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
-                                    Menu
+                                    <HashLink to="/home#packages">PACKAGES</HashLink>
                                 </Link>
                                 <Link
                                     href="/services"
@@ -200,7 +202,7 @@ const Header = () => {
                                     duration={500}
                                     className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
-                                    Reservation
+                                    <HashLink to="/home#blog">BLOG</HashLink>
                                 </Link>
                                 <link rel="stylesheet" href="" />
                                 <Link
@@ -212,8 +214,14 @@ const Header = () => {
                                     duration={500}
                                     className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
-                                    Login
+                                    <NavLink to="/contact">
+                                        CONTACT
+                                    </NavLink>
                                 </Link>
+                                <div className='mt-8'>
+                                <i className="lni lni-search-alt duration-100 cursor-pointer text-3xl mr-8 hover:text-blue-500"></i>
+                                <i className="lni lni-shopping-basket duration-100 cursor-pointer text-3xl hover:text-blue-500"></i>
+                            </div>
                             </div>
                         </div>
                     )}

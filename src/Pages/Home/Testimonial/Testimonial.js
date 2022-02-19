@@ -6,11 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/free-mode";
 
 import "./Testimonial.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { FreeMode, Pagination, Navigation } from "swiper";
 
 const Testimonial = () => {
     return (
@@ -26,55 +27,115 @@ const Testimonial = () => {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiper pt-10"
+                className="mySwiper pt-10 swiper-container"
             >
                 <SwiperSlide>
-                <div className="grid grid-cols-3 gap-16 w-9/12 m-auto">
+                    <div className="grid grid-cols-3 gap-16 w-9/12 m-auto testimonial-card">
+                        <div className="bg-white p-8 slider-card">
+                            <img src="https://images.unsplash.com/photo-1608153488161-803b502750fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y291cGxlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
+                            <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
+                            <h1 className="text-2xl font-bold poppins mb-2">Rose & Harry</h1>
+                            <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
+                        </div>
+
+                        <div className="bg-white p-8 slider-card">
+                            <img src="https://images.unsplash.com/photo-1607434489594-e3f57cc075b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
+                            <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
+                            <h1 className="text-2xl font-bold poppins mb-2">Maria & Robin</h1>
+                            <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
+                        </div>
+
+                        <div className="bg-white p-8 slider-card">
+                            <img src="https://images.unsplash.com/photo-1631208446303-40facec6e391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
+                            <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
+                            <h1 className="text-2xl font-bold poppins mb-2">Michel & Dianee</h1>
+                            <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="grid grid-cols-3 gap-16 w-9/12 m-auto">
+                        <div className="bg-white p-8 slider-card">
+                            <img src="https://images.unsplash.com/photo-1589544421314-2d8297a767a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
+                            <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
+                            <h1 className="text-2xl font-bold poppins mb-2">Maria & Nevela</h1>
+                            <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
+                        </div>
+
+                        <div className="bg-white p-8 slider-card">
+                            <img src="https://images.unsplash.com/flagged/photo-1595542767876-715090b35fad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
+                            <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
+                            <h1 className="text-2xl font-bold poppins mb-2">Aliana & David</h1>
+                            <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
+                        </div>
+
+                        <div className="bg-white p-8 slider-card">
+                            <img src="https://images.unsplash.com/photo-1604420504944-faf557a48b34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
+                            <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
+                            <h1 className="text-2xl font-bold poppins mb-2">Aliza & Ken</h1>
+                            <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={30}
+                freeMode={true}
+                pagination={{
+                    clickable: true
+                }}
+                modules={[FreeMode, Pagination]}
+                className="mySwiper mobile-slider"
+            >
+                <SwiperSlide>
                     <div className="bg-white p-8 slider-card">
                         <img src="https://images.unsplash.com/photo-1608153488161-803b502750fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y291cGxlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
                         <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
                         <h1 className="text-2xl font-bold poppins mb-2">Rose & Harry</h1>
                         <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
                     </div>
-
+                </SwiperSlide>
+                <SwiperSlide>
                     <div className="bg-white p-8 slider-card">
                         <img src="https://images.unsplash.com/photo-1607434489594-e3f57cc075b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
                         <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
                         <h1 className="text-2xl font-bold poppins mb-2">Maria & Robin</h1>
                         <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
                     </div>
-
+                </SwiperSlide>
+                <SwiperSlide>
                     <div className="bg-white p-8 slider-card">
                         <img src="https://images.unsplash.com/photo-1631208446303-40facec6e391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
                         <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
                         <h1 className="text-2xl font-bold poppins mb-2">Michel & Dianee</h1>
                         <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
                     </div>
-                </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="grid grid-cols-3 gap-16 w-9/12 m-auto">
                     <div className="bg-white p-8 slider-card">
                         <img src="https://images.unsplash.com/photo-1589544421314-2d8297a767a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
                         <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
                         <h1 className="text-2xl font-bold poppins mb-2">Maria & Nevela</h1>
                         <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
                     </div>
-
+                </SwiperSlide>
+                <SwiperSlide>
                     <div className="bg-white p-8 slider-card">
                         <img src="https://images.unsplash.com/flagged/photo-1595542767876-715090b35fad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
                         <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
                         <h1 className="text-2xl font-bold poppins mb-2">Aliana & David</h1>
                         <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
                     </div>
-
+                </SwiperSlide>
+                <SwiperSlide>
                     <div className="bg-white p-8 slider-card">
                         <img src="https://images.unsplash.com/photo-1604420504944-faf557a48b34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGNvdXBsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="client-img" />
                         <p className="text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident eum sequi amet quas nemo, esse distinctio ea iste ut!</p>
                         <h1 className="text-2xl font-bold poppins mb-2">Aliza & Ken</h1>
                         <h1 className="text-base poppins text-blue-500">Wedding 06/02/2022</h1>
                     </div>
-                </div>
                 </SwiperSlide>
             </Swiper>
         </div>

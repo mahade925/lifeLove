@@ -1,3 +1,10 @@
 .blog-card:hover img {
     filter: grayscale(100%);
 }
+
+@media screen and (max-width: 767px) {
+    .blog-container {
+        width: 85% !important;
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+}

@@ -6,7 +6,7 @@ const Blog = () => {
         <div className='my-48 pt-32' id='blog'>
             <h1 className='josefins-sans text-2xl mb-4'>News</h1>
             <h1 className='josefins-sans text-4xl mt-2 mb-16'>FROM OUR BLOG</h1>
-            <div className="grid grid-cols-3 gap-10 w-8/12 m-auto text-left">
+            <div className="grid grid-cols-3 gap-10 w-8/12 m-auto text-left blog-container">
                 <div className='hover:grayscale duration-700 cursor-pointer'>
                     <img src="https://images.unsplash.com/photo-1594709286212-9b2e54ba08b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" className='h-3/4 w-full' />
                     <h1 className='text-xl poppins my-4 text-blue-500'>By Loura Sweety - 25 Sep 2021</h1>

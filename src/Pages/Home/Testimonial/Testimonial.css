@@ -46,3 +46,24 @@
 .testimonial-container {
     height: 32rem;
 }
+
+@media screen and (max-width: 767px) {
+  .testimonial-container {
+    height: 32rem;
+  }
+  .testimonial-card {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  .swiper-container {
+    display: none;
+  }
+  .slider-card {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-slider {
+    display: none;
+  }
+}

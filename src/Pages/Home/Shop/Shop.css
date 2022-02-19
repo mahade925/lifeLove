@@ -49,3 +49,12 @@
     filter: brightness(50%);
     transition-duration: all .2s;
 }
+
+@media screen and (max-width: 767px) {
+    .shop-title {
+        font-size: 25px;
+    }
+    .image-box-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+}

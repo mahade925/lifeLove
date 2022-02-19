@@ -12,7 +12,7 @@ const Contact = () => {
                     <h1 className='text-6xl josefins-sans font-bold text-white mb-8'>Contact</h1>
                     <h1 className='text-xl poppins text-white'>Home / Contact</h1>
                 </div>
-                <div className="grid grid-cols-3 gap-10 w-6/12 m-auto pt-20">
+                <div className="grid grid-cols-3 gap-10 w-6/12 m-auto pt-20 location-card">
                     <div className='bg-white contact-card py-10'>
                         <i className="text-blue-600 text-5xl fa fa-map-marker" aria-hidden="true"></i>
                         <h1 className='text-3xl josefins-sans py-4'>Address</h1>
