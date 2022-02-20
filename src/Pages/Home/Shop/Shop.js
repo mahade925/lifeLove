@@ -4,7 +4,7 @@ import './Shop.css'
 const Shop = () => {
     return (
         <div className="mt-40 mb-40" id='shop'>
-            <h1 className='josefins-sans text-2xl md:text-6xl mb-4'>Our Shop</h1>
+            <h1 className='josefins-sans text-2xl mb-4'>Our Shop</h1>
             <h1 className='josefins-sans text-4xl mt-2 mb-14 shop-title'>SPECIAL PRODUCT FOR YOU</h1>
             <div className="grid grid-cols-4 gap-8 w-8/12 m-auto image-box-container">
                 <div className='image-box'>
